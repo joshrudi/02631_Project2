@@ -1,3 +1,4 @@
+#created by Jakub Reha
 import numpy as np
 from roundGrade import roundGrade
 def computeFinalGrades(grades):
@@ -5,6 +6,7 @@ def computeFinalGrades(grades):
     if grades.shape[1]==1:
        gradesFinal = grades 
     else:
+        #the function separates the input matrix into particular lines and deal each one individually
         for i in range(grades.shape[0]):
             line = grades[i,]
             if np.isin(-3,line)==True:
