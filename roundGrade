@@ -2,7 +2,7 @@
 import numpy as np
 def roundGrade(grades):
     scale = np.array([-3,0,2,4,7,10,12])
-    #initializing an emty array which we will append the rounded grades to
+    #initializing an empty array which we will append the rounded grades to
     gradesRounded = ([])
     #we will go through the scale array and compare if the input grade to the scale grades
     for i in range(np.size(grades)):
