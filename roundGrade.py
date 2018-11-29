@@ -1,4 +1,4 @@
-#created by Jakub Reha
+# created by Jakub Reha
 import numpy as np
 def roundGrade(grades):
     scale = np.array([-3,0,2,4,7,10,12])

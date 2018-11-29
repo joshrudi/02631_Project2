@@ -1,6 +1,8 @@
-#created by Jakub Reha
+# created by Jakub Reha
 import numpy as np
 from roundGrade import roundGrade
+
+
 def computeFinalGrades(grades):
     gradesFinal = np.array([])
     if grades.shape[1]==1:
