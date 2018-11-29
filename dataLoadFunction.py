@@ -5,6 +5,7 @@ from pathlib import Path
 def dataLoad(filename):
 
     if not Path(filename).is_file():
+
         print("Error: Invalid File Name/Path!")
         return []
 
