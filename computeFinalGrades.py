@@ -11,15 +11,13 @@ def computeFinalGrades(grades):
        gradesFinal = grades 
     else:
 
-        # the function separates the input matrix into particular lines and deal each one individually
-        for i in range(grades.shape[0]):
+        # the function separates the input matrix into particular lines and deals each one individually
+        for i in range(0,grades.shape[0]):
 
-            line = grades[i, ]
+            line = grades[i,:]
             if np.isin(-3,line) == True:
-
                 gradesFinal = np.append(gradesFinal, -3)
             else:
-
                 index = line.argmin()
                 line = np.delete(line, index)
                 gradesFinal = np.append(gradesFinal, np.mean(line))

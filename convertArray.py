@@ -8,5 +8,5 @@ def convertArray(studentStats):
     data = np.delete(data, 0, 0)  # remove first row  (StudentID, Name, Assignment1, etc...)
     data = np.delete(data, 0, 1)  # remove first col  (sXXXXXX, sXXXXXX, etc...)
     data = np.delete(data, 0, 1)  # remove second col (Michael Andersen, Bettina Petersen, etc...)
-
+    data = np.array(data).astype(int)
     return data
