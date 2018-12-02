@@ -8,7 +8,6 @@ import numpy as np
 def printGrades(grades, rawData):
 
     studentFinal = np.zeros([len(rawData)-1, 2]).astype(str)
-    assignNum = 1
     print("\nAll Grades: ")
     for i in range(2, len(rawData[0])):  # prints grades for all students
 
