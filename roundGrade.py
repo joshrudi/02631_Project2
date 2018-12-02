@@ -1,3 +1,5 @@
+# Code by Jakub Reha
+
 import numpy as np
 
 

@@ -1,9 +1,13 @@
+# Code by Joshua Rudaitis
+
 import numpy as np
 from dataLoadFunction import dataLoad
 from displayMenu import displayMenu
 from errorCheck import checkError
 from computeFinalGrades import computeFinalGrades
 from convertArray import convertArray
+from printData import printGrades
+from plottingFunction import GradesPerAssignment
 
 
 menuItems = np.array(["Load new data", "Check for data errors", "Generate plots", "Display list of grades", "Quit\n"])
@@ -38,20 +42,20 @@ while isRunning:
 
         if isDataLoaded:
 
-            print("todo: implement")
+            GradesPerAssignment(convertArray(data))
         else:
 
-            print("Please Load new data first!")
+            print("Please Load new data first!\n")
     # ------------------------------------------------------------------
     # Display Grades
     elif choice == 4:
 
         if isDataLoaded:
 
-            print(computeFinalGrades(convertArray(data)))
+            printGrades(computeFinalGrades(convertArray(data)), data)
         else:
 
-            print("Please Load new data first!")
+            print("Please Load new data first!\n")
     # ------------------------------------------------------------------
     # Quit
     elif choice == 5:
