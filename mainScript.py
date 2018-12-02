@@ -44,18 +44,17 @@ while isRunning:
             print("todo: implement")
         else:
 
-            print("Please Load new data first!")
+            print("Please Load new data first!\n")
     # ------------------------------------------------------------------
     # Display Grades
     elif choice == 4:
 
         if isDataLoaded:
 
-            # !!! Question?  Do all printed grades need to be alphabetically sorted or just the final grade printout?
             printGrades(computeFinalGrades(convertArray(data)), data)
         else:
 
-            print("Please Load new data first!")
+            print("Please Load new data first!\n")
     # ------------------------------------------------------------------
     # Quit
     elif choice == 5:

@@ -8,14 +8,18 @@ import numpy as np
 def printGrades(grades, rawData):
 
     studentFinal = np.zeros([len(rawData)-1, 2]).astype(str)
+    assignNum = 1
     print("\nAll Grades: ")
-    for i in range(1, len(rawData)):  # prints grades for all students
+    for i in range(2, len(rawData[0])):  # prints grades for all students
 
-        studentFinal[i-1][0] = rawData[i][1]  # add name to final grades display
-        studentFinal[i-1][1] = grades[i-1]    # add grade to final grades display
-        for j in range(0, len(rawData[0])):
+        for j in range(0, len(rawData)):
 
-            print(rawData[i][j], end=" ")
+            if j < len(rawData)-1:
+
+                studentFinal[j][0] = rawData[j+1][1]  # add name to final grades display
+                studentFinal[j][1] = grades[j]  # add grade to final grades display
+
+            print(rawData[j][i], end=", ")
 
         print("")  # formatting
 
