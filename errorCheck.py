@@ -9,7 +9,7 @@ def verifyScale(row):
                 and row[i] != "00" and row[i] != "-3"):
 
             print("\n! Error: Grade not a '7-Step-Scale' grade, " + row[0] + " " + row[1] +
-                  "; Assignment " + str(i-1) + "; [" + row[i] + "]\n")
+                  "; Assignment " + str(i-1) + "; Invalid Grade [" + row[i] + "]\n")
 
 
 # takes in 2d array of values, and handles printing any errors (conflicting IDs or invalid grade)

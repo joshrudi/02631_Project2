@@ -12,5 +12,5 @@ def displayMenu(options):
     choice = 0
     while not(np.any(choice == np.arange(len(options))+1)):
 
-        choice = inputNumber("Please choose a menu item: ")
+        choice = inputNumber("Please choose a menu item (1, 2, 3, etc): ")
     return choice
