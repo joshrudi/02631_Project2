@@ -1,9 +1,12 @@
+# Code by Joshua Rudaitis
+
 import numpy as np
 from dataLoadFunction import dataLoad
 from displayMenu import displayMenu
 from errorCheck import checkError
 from computeFinalGrades import computeFinalGrades
 from convertArray import convertArray
+from printData import printGrades
 
 
 menuItems = np.array(["Load new data", "Check for data errors", "Generate plots", "Display list of grades", "Quit\n"])
@@ -48,7 +51,8 @@ while isRunning:
 
         if isDataLoaded:
 
-            print(computeFinalGrades(convertArray(data)))
+            # !!! Question?  Do all printed grades need to be alphabetically sorted or just the final grade printout?
+            printGrades(computeFinalGrades(convertArray(data)), data)
         else:
 
             print("Please Load new data first!")

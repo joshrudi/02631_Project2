@@ -1,3 +1,5 @@
+# Code by Joshua Rudaitis
+
 def inputNumber(prompt):
 
     while True:

@@ -1,3 +1,5 @@
+# Code by Joshua Rudaitis
+
 import csv
 from pathlib import Path
 

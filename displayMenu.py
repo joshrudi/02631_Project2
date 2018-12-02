@@ -1,3 +1,5 @@
+# Code by Joshua Rudaitis
+
 import numpy as np
 from inputNumber import inputNumber
 

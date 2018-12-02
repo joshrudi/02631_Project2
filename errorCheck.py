@@ -1,3 +1,5 @@
+# Code by Joshua Rudaitis
+
 # takes in a row (1d array), and prints error if grade is not a '7-step-scale' grade
 def verifyScale(row):
 
