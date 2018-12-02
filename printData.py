@@ -18,7 +18,7 @@ def printGrades(grades, rawData):
                 studentFinal[j][0] = rawData[j+1][1]  # add name to final grades display
                 studentFinal[j][1] = grades[j]  # add grade to final grades display
 
-            print(rawData[j][i], end=", ")
+            print(rawData[j][i], end=",\t")
 
         print("")  # formatting
 
