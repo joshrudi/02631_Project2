@@ -26,7 +26,7 @@ def roundGrade(grades):
                     notAssigned = False
             #we determine between which two scale grades the input grade lies        
             elif grades[i] < scale[k]:
-                #then compute which one is the closer one
+                #then compute which scale grade is the closer one
                 if abs(grades[i] - scale[k-1]) < abs(grades[i] - scale[k]):
 
                    gradesRounded = np.append(gradesRounded, scale[k-1])
