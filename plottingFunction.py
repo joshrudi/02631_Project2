@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from computeFinalGrades import computeFinalGrades
 
-
+#2-plot function,input is a matrix of grades for each student and each assignment
 def GradesPerAssignment(grades):
     #bar plot displaying what amount of each particular grade was received
     x = np.array([-3,0,2,4,7,10,12])
@@ -24,6 +24,7 @@ def GradesPerAssignment(grades):
         y = np.append(y,np.mean(grades[:,i]))
     plt.plot(x,y, color = "red",label = "The average grade \n for each assignment")
     x=np.array(range(1,grades.shape[1]+1))
+    
     #point plot showing all the grades given, plotted row by a row, first row is outside the loop, in order to have just one label in the legend
     plt.plot(x+np.random.uniform(-0.1,0.1,1), grades[0,:]+np.random.uniform(-0.1,0.1,1), "b*",label="Grade points")
     for i in range(1,grades.shape[0]):
