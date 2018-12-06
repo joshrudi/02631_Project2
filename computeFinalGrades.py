@@ -3,9 +3,8 @@
 import numpy as np
 from roundGrade import roundGrade
 
-
+#computes final grade for each student, input is a matrix of grades for assignments, output an array
 def computeFinalGrades(grades):
-    #input is a matrix
     gradesFinal = np.array([])
     #special case of having only one assignment
     if grades.shape[1] == 1:
