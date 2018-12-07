@@ -1,4 +1,5 @@
-# Code by Joshua Rudaitis
+# Code by Jakub Reha
+# Used from course documentation
 
 import numpy as np
 from inputNumber import inputNumber

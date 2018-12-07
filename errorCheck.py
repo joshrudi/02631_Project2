@@ -1,10 +1,12 @@
 # Code by Joshua Rudaitis
 
+
 # takes in a row (1d array), and prints error if grade is not a '7-step-scale' grade
 def verifyScale(row):
 
-    for i in range(2, len(row)):
+    for i in range(2, len(row)):  # for each value
 
+        # if not a valid grade, print error
         if (row[i] != "12" and row[i] != "10" and row[i] != "7" and row[i] != "4" and row[i] != "02"
                 and row[i] != "00" and row[i] != "-3"):
 

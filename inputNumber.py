@@ -1,4 +1,5 @@
-# Code by Joshua Rudaitis
+# Code by Jakub Reha
+
 
 def inputNumber(prompt):
 
