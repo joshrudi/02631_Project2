@@ -22,6 +22,8 @@ def printGrades(grades, rawData):
 
         print("")  # formatting
 
+    # reference: https://stackoverflow.com/questions/6618515/sorting-list-based-on-values-from-another-list
+    # found this really useful for sorting in one line
     studentFinal = studentFinal[studentFinal[:, 0].argsort()]  # sorts grades alphabetically
     print("\nFinal Grades:")
 
